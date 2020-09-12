@@ -12,13 +12,13 @@ const initialState = {
       title: 'title 2',
       responsible: 'responsible 2',
       description: 'description 2',
-      priority: 'low',
+      priority: 'medium',
     },
     {
       title: 'title 3',
       responsible: 'responsible 3',
       description: 'description 3',
-      priority: 'low',
+      priority: 'hight',
     },
   ],
 };

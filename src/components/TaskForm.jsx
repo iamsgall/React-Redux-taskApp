@@ -18,6 +18,13 @@ export const TaskForm = props => {
   const handleSubmit = e => {
     console.log(task);
     addTask(task);
+    setTask({
+      title: '',
+      responsible: '',
+      description: '',
+      priority: 'low',
+    });
+
     e.preventDefault();
   };
 

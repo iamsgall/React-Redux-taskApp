@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {deleteTask} from '../store/actions/action';
+import PriorityColor from './PriorityColor';
 
 export function TaskList(props) {
   const {tasks, deleteTask} = props;
@@ -23,12 +24,7 @@ export function TaskList(props) {
                 <mark>{task.responsible}</mark>
               </h6>
               <p className='card-tex text-center'>{task.description}</p>
-              <span
-                className='badge badge-pill float-right py-2 px-3'
-                style={{background: '#00A8EC', color: '#fff'}}
-              >
-                {task.priority}
-              </span>
+              {<PriorityColor priority={task.priority} />}
             </div>
             <div className='card-footer'>
               <button
